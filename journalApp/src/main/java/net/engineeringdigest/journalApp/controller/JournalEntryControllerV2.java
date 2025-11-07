@@ -39,7 +39,7 @@ public class JournalEntryControllerV2 {
 
     @GetMapping("userName")
     public JournalEntry getJournalEntryById(@PathVariable String userName) {
-        return journalEntryService.findById(myId).orElse(null);
+        return journalEntryService.findById().orElse(null);
     }
 
     @DeleteMapping("id/{myId}")
